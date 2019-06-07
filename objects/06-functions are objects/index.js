@@ -5,8 +5,8 @@ function Circle(radius) {
     }
 }
 
-Circle.call({}, 1,2,3);
-Circle.apply({}, [1,2,3]);
+Circle.call({}, 1, 2, 3);
+Circle.apply({}, [1, 2, 3]);
 
 
 const circle = new Circle(1);
