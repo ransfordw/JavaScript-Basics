@@ -5,11 +5,16 @@
 // zip code
 // showAddress(address) that shows the address
 
+console.log(`Enter: "showAddress"()\n
+and pass in "address" as a parameter.`);
+
 let address = {
     street: "12175 Visionary Way",
     city: "Fishers",
     zipCode: 46038,
-    showAddress(address) {
-        console.log(`${this.street}, ${this.city}, ${this.zipCode}`)
-    }
+};
+
+function showAddress(address) {
+    for (let key in address)
+        console.log(key, address[key]);
 }
