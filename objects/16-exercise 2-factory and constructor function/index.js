@@ -19,5 +19,5 @@ console.log(address2);
 function Address(street, city, zipCode){
     this.street = street,
     this.city = city,
-    this.zipCode
+    this.zipCode = zipCode
 }
