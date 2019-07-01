@@ -16,3 +16,13 @@ function Post(title, body, author /*views default as zero*/)
 }
 
 console.log(post);
+
+function viewPost(post){
+    console.log(post);
+    post.views += 1;
+}
+
+function commentOnPost(comment, post){
+    post.comments.push(comment);
+    console.log("Added your comment succesfully!")
+}
