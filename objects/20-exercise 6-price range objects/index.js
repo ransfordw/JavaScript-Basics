@@ -1,9 +1,12 @@
 
 // Create a series of Price Range Objects
 class PriceRangeObject {
-    constructor(rangeIndex) {
+    constructor(rangeIndex, toolTip, minCostPerPerson, maxCostPerPerson) {
         this.message = createMessage(rangeIndex),
-            this.rangeIndex = rangeIndex;
+            this.rangeIndex = rangeIndex,
+            this.toolTip = toolTip,
+            this.minCostPerPerson = minCostPerPerson,
+            this.maxCostPerPerson = maxCostPerPerson
     }
 }
 
@@ -17,13 +20,13 @@ function createMessage(rangeIndex) {
     }
 }
 
-let price1 = new PriceRangeObject(1);
-let price2 = new PriceRangeObject(2);
-let price3 = new PriceRangeObject(3);
+let price1 = new PriceRangeObject(1, 'Inexpensive', 1, 10);
+let price2 = new PriceRangeObject(2, 'Moderate', 11, 20);
+let price3 = new PriceRangeObject(3, 'Expensive', 21, 50);
 
-console.log(price1.message);
-console.log(price2.message);
-console.log(price3.message);
+console.log(price1);
+console.log(price2);
+console.log(price3);
 
 // Mosh's version
 
