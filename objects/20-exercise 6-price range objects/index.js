@@ -24,3 +24,15 @@ let price3 = new PriceRangeObject(3);
 console.log(price1.message);
 console.log(price2.message);
 console.log(price3.message);
+
+// Mosh's version
+
+let priceRanges = [
+    {label: '$', tootTip: 'Inexpensive', minPerPerson: 0, maxPerPerson:10 },
+    {label: '$$', tootTip: 'Moderate', minPerPerson: 11, maxPerPerson:20 },
+    {label: '$$$', tootTip: 'Expensive', minPerPerson: 21, maxPerPerson:50 }
+];
+
+let restaurants = [
+    {averagePerPerson: 5}
+]
