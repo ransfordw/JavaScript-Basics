@@ -24,5 +24,5 @@ function viewPost(post){
 
 function commentOnPost(comment, post){
     post.comments.push(comment);
-    console.log("Added your comment succesfully!")
+    console.log("Added your comment succesfully!");
 }
