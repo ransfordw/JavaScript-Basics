@@ -19,7 +19,7 @@ function countOccurencesTwo(array, searchElement) {
     return array
         .reduce((accumulator, current) => {
             const occurence = (current === searchElement) ? 1 : 0;
-           // console.log(accumulator, current, searchElement);
+            // console.log(accumulator, current, searchElement);
             return accumulator + occurence;
         }, 0);
 }
